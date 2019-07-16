@@ -12,19 +12,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                <a class="nav-link js-scroll-trigger" href="/#about">@lang('menu.about')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                <a class="nav-link js-scroll-trigger" href="#experience">@lang('menu.experience')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                <a class="nav-link js-scroll-trigger" href="#education">@lang('menu.education')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                <a class="nav-link js-scroll-trigger" href="#skills">@lang('menu.skills')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+                <a class="nav-link js-scroll-trigger" href="#interests">@lang('menu.interests')</a>
             </li>
         </ul>
     </div>

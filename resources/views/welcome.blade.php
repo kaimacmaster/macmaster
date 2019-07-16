@@ -20,17 +20,14 @@
                     @lang('user.profile')
                 </p>
                 <div class="social-icons">
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/kaimacmaster/">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/strangekai/">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://twitter.com/strangekai">
                         <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>
             </div>
@@ -38,9 +35,9 @@
 
         <hr class="m-0">
 
-        <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="experience">
             <div class="w-100">
-                <h2 class="mb-5">Experience</h2>
+                <h2 class="mb-5">@lang('menu.experience')</h2>
 
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="resume-content">
@@ -94,7 +91,7 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
             <div class="w-100">
-                <h2 class="mb-5">Education</h2>
+                <h2 class="mb-5">@lang('menu.education')</h2>
 
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="resume-content">
@@ -124,7 +121,7 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
             <div class="w-100">
-                <h2 class="mb-5">Skills</h2>
+                <h2 class="mb-5">@lang('menu.skills')</h2>
 
                 <div class="subheading mb-3">Programming Languages &amp; Tools</div>
                 <ul class="list-inline dev-icons mb-0">
@@ -211,7 +208,7 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
             <div class="w-100">
-                <h2 class="mb-5">Interests</h2>
+                <h2 class="mb-5">@lang('menu.interests')</h2>
                 <p>Apart from being a web developer, I enjoy most of my time looking after my son with my better half.</p>
                 <p>But when I'm not changing nappies, making milk up or enjoying a chat and a brew with my best friend, I follow a number of sci-fi and fantasy genre movies and television
                     shows, and I spend a large amount of my free time learning <a href="/jp">Japanese</a> or exploring the latest technology
