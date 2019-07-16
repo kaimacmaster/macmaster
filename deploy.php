@@ -15,7 +15,7 @@ host('macmaster.co.uk')
     ->user('root')
     ->identityFile('~/.ssh/id_rsa')
     ->stage('production')
-    ->set('deploy_path', '/var/www/macmaster.co.uk/root/');
+    ->set('deploy_path', '/var/www/macmaster.co.uk/root');
     
 // Tasks
 task('build', function () {
@@ -25,6 +25,8 @@ task('build', function () {
 task('restart-php', function () {
     run('sudo service php7.2-fpm reload');
 });
+
+task('artisan:optimize', function () {});
 
 after('deploy:failed', 'deploy:unlock');
 before('deploy:symlink', 'artisan:migrate');
