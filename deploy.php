@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 set('application', 'my_project');
-set('repository', 'https://github.com/strangekai/macmaster.git');
+set('repository', 'git@github.com:strangekai/macmaster.git');
 set('git_tty', true);
 
 add('shared_files', []);
