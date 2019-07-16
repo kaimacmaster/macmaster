@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Contracts\Support\Renderable;
+use Illuminate\Support\Facades\App;
 
 class HomeController extends Controller
 {
@@ -13,16 +14,27 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
-     * Show the application dashboard.
+     * Show the application.
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @return Renderable
      */
     public function index()
     {
-        return view('home');
+        return view('welcome');
+    }
+
+    /**
+     * Change the locale, then show the application.
+     *
+     * @return Renderable
+     */
+    public function changeLocale($locale)
+    {
+        App::setLocale($locale);
+        return view('welcome');
     }
 }
