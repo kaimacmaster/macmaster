@@ -22,12 +22,7 @@ task('build', function () {
     run('cd {{release_path}} && build');
 });
 
-task('restart-php', function () {
-    run('sudo service php7.2-fpm reload');
-});
-
 task('artisan:optimize', function () {});
 
 after('deploy:failed', 'deploy:unlock');
-before('deploy:symlink', 'artisan:migrate');
-after('deploy:symlink', 'restart-php');
+//before('deploy:symlink', 'artisan:migrate');
